@@ -1,16 +1,15 @@
 package org.raflab.studsluzba;
 
-import org.raflab.studsluzba.model.Predmet;
 import org.raflab.studsluzba.repositories.PredmetRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
 @Component
-public class BootstrapData implements CommandLineRunner {
+public class Seeder implements CommandLineRunner {
 
     private final PredmetRepository predmetRepository;
 
-    public BootstrapData(PredmetRepository predmetRepository) {
+    public Seeder(PredmetRepository predmetRepository) {
         this.predmetRepository = predmetRepository;
     }
 
@@ -24,7 +23,7 @@ public class BootstrapData implements CommandLineRunner {
 //        p.setObavezan(true);
 //
 //        predmetRepository.save(p);
-//
+//co
 //
 //        System.out.println("Dodat predmet u bazu " + p.getNaziv());
 

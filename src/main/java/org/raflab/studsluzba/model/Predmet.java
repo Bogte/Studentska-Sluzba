@@ -9,7 +9,7 @@ import lombok.ToString;
 
 @Entity
 @Data
-@ToString()
+@ToString(exclude = {"studProgram"})
 public class Predmet {
 	
 	@Id
@@ -23,6 +23,8 @@ public class Predmet {
 	private String naziv;
 	private String opis;
 	private Integer espb;
+	@ManyToOne
+	private StudijskiProgram studProgram;
 	private boolean obavezan;
 
 	@Override
